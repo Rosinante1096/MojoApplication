@@ -1,0 +1,27 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+        <mat-toolbar>Menu</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item href="#">Ingesta</a>
+            <a mat-list-item href="#">Ingresos</a>
+            <a mat-list-item href="#">Analitica</a>
+            <a mat-list-item href="#">YouTube</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+            <img src="https://mojo.com.ar/wp-content/uploads/2018/09/logo-web.png" width="110" height="40" class="d-inline-block align-top" alt="">
+
+            <span class="spacer"></span>
+            <span>Ingesta</span>
+            <span>Ingresos</span>
+            <span>Analitica</span>
+            <span>YouTube</span>
+
+        </mat-toolbar>
+        <!-- Add Content Here -->
+    </mat-sidenav-content>
+</mat-sidenav-container>
