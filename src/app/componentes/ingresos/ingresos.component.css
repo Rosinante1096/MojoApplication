@@ -1,0 +1,86 @@
+mat-card {
+    width: 100%;
+    height: 100%;
+}
+
+mat-card-title {
+    text-align: center;
+    margin-left: 20%s
+}
+
+mat-card-content {
+    margin-left: 16px;
+}
+
+span {
+    line-height: 60px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+mat-icon {
+    color: #edd920;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+}
+
+mat-form-field {
+    width: 400px;
+}
+
+
+/*Estilo button*/
+
+.clase-button {
+    line-height: 53px;
+}
+
+.clase-button button {
+    background-color: #161616;
+    color: #edd920;
+}
+
+
+/*Estilo input*/
+
+
+/* Font color */
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #161616 !important;
+}
+
+ ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #161616 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #161616 !important;
+    ;
+}
+
+
+/*Estilos tabla*/
+
+table {
+    width: 100%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 25%;
+}

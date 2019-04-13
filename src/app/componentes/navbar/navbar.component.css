@@ -1,3 +1,9 @@
+.container {
+    width: auto;
+    height: auto;
+    margin: 50px 100px 10px 100px;
+}
+
 .sidenav-container {
     height: 100%;
 }
@@ -19,10 +25,16 @@
 }
 
 span {
-    margin-left: 15px;
+    margin: 0px 20px 0px 20px;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
     display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s;
+}
+
+span:hover {
+    color: gray;
 }
 
 .spacer {
@@ -33,10 +45,22 @@ span {
     flex: 1 1 auto;
 }
 
+img {
+    margin-left: 100px;
+}
+
+mat-icon {
+    margin: 0px 5px 0px 5px;
+    color: #edd920;
+}
+
 @media (max-width:960px) {
     .sidenav {
         width: 200px;
         background: inherit;
         background-color: #161616 !important;
+    }
+    img {
+        margin-left: 50px;
     }
 }

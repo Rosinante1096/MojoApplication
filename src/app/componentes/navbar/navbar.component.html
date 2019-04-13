@@ -13,15 +13,22 @@
             <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-            <img src="https://mojo.com.ar/wp-content/uploads/2018/09/logo-web.png" width="110" height="40" class="d-inline-block align-top" alt="">
+            <img src="https://mojo.com.ar/wp-content/uploads/2018/09/logo-web.png" width="130" height="50" class="d-inline-block align-top" alt="">
 
             <span class="spacer"></span>
-            <span>Ingesta</span>
-            <span>Ingresos</span>
-            <span>Analitica</span>
-            <span>YouTube</span>
+            <span><strong>Ingesta</strong></span>
+            <span><strong>Ingresos</strong></span>
+            <span><strong>Análitica</strong></span>
+            <span><strong>YouTube</strong></span>
+            <mat-icon style="margin-left:40px;" aria-label="Side nav toggle icon">notifications</mat-icon>
+            <mat-icon aria-label="Side nav toggle icon">mail_outline</mat-icon>
+            <mat-icon aria-label="Side nav toggle icon">person</mat-icon>
+
 
         </mat-toolbar>
         <!-- Add Content Here -->
+        <div class="container">
+            <app-ingresos></app-ingresos>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
